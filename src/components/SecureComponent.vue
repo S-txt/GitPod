@@ -24,17 +24,36 @@ export default {
   display: flex;
   flex-flow: column;
   align-items: center;
+  gap: 48px
 }
 .title{
   font-size: 54px;
 }
 img{
-  max-height: 820px;
-  max-width: 775px;
+  width: 820px;
+  max-width: 820px;
+  box-shadow: -2px 2px 15px 8px var(--yellow);
+  border-radius: 14px;
 }
 .text{
   max-width: 900px;
   font-size: 24px;
   text-align: center;
+  color: var(--grey);
+}
+.extension__container{
+  display: flex;
+  flex-flow: row;
+  gap:16px
+}
+.extension__container .bold{
+  padding: 8px 12px 8px 46px;
+  font-size: 18px;
+}
+.chrome{
+  background: url("../assets/ic_mozilla.svg") 7% center no-repeat, white;
+}
+.mozilla{
+  background: url("../assets/ic_mozilla.svg") 7% center no-repeat, white;
 }
 </style>

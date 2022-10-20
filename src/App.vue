@@ -22,6 +22,7 @@
   </div>
   <about-component/>
   <secure-component/>
+  <users-component/>
 </template>
 
 <script>
@@ -29,9 +30,11 @@
 import MainComponent from "@/components/MainComponent";
 import AboutComponent from "@/components/AboutComponent";
 import SecureComponent from "@/components/SecureComponent";
+import UsersComponent from "@/components/UsersComponent";
 export default {
   name: 'App',
   components: {
+    UsersComponent,
     SecureComponent,
     AboutComponent,
     MainComponent
