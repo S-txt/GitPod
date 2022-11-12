@@ -23,6 +23,21 @@
   <about-component/>
   <secure-component/>
   <users-component/>
+  <div class="companies__list">
+    <img src="./assets/lb_gitlab.svg">
+    <img src="./assets/lb_freecodecamp.svg">
+    <img src="./assets/lb_dwave.svg">
+    <img src="./assets/lb_google.svg">
+    <img src="./assets/lb_amazon.svg">
+    <img src="./assets/lb_facebook.svg">
+    <img src="./assets/lb_uber.svg">
+    <img src="./assets/lb_openai.svg">
+    <img src="./assets/lb_intel.svg">
+    <img src="./assets/lb_theia.svg">
+    <img src="./assets/lb_code.svg">
+    <img src="./assets/lb_4geeks.svg">
+  </div>
+  <start-component/>
 </template>
 
 <script>
@@ -31,9 +46,11 @@ import MainComponent from "@/components/MainComponent";
 import AboutComponent from "@/components/AboutComponent";
 import SecureComponent from "@/components/SecureComponent";
 import UsersComponent from "@/components/UsersComponent";
+import StartComponent from "@/components/StartComponent";
 export default {
   name: 'App',
   components: {
+    StartComponent,
     UsersComponent,
     SecureComponent,
     AboutComponent,
@@ -115,5 +132,16 @@ header{
   color: var(--ligh-grey);
   text-decoration: line-through;
   text-decoration-thickness: 4px ;
+}
+.companies__list{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.companies__list{
+  flex-basis: calc(100% / 7);
 }
 </style>

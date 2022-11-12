@@ -12,8 +12,38 @@
         name="Ben Halpern"
         position="Creator and Co-founder <b>@forem<b/> and <b>@ThePracticalDev<b/>"
     />
+    <card-component
+        text="GitPod is incredibly cool. \n \n In my opinion, this is a big step in open source software contribution. I'm excited to see where we go from here."
+        img='../assets/ic_user.svg'
+        name="Ben Halpern"
+        position="Creator and Co-founder <b>@forem<b/> and <b>@ThePracticalDev<b/>"
+    />
+    <card-component
+        text="GitPod is incredibly cool. \n \n In my opinion, this is a big step in open source software contribution. I'm excited to see where we go from here."
+        img='../assets/ic_user.svg'
+        name="Ben Halpern"
+        position="Creator and Co-founder <b>@forem<b/> and <b>@ThePracticalDev<b/>"
+    />
+    <card-component
+        text="GitPod is incredibly cool. \n \n In my opinion, this is a big step in open source software contribution. I'm excited to see where we go from here."
+        img='../assets/ic_user.svg'
+        name="Ben Halpern"
+        position="Creator and Co-founder <b>@forem<b/> and <b>@ThePracticalDev<b/>"
+    />
+    <card-component
+        text="GitPod is incredibly cool. \n \n In my opinion, this is a big step in open source software contribution. I'm excited to see where we go from here."
+        img='../assets/ic_user.svg'
+        name="Ben Halpern"
+        position="Creator and Co-founder <b>@forem<b/> and <b>@ThePracticalDev<b/>"
+    />
+    <card-component/>
+    <card-component/>
+    <card-component/>
+    <card-component/>
   </div>
-</users__container>
+  </users__container>
+
+
 </template>
 
 <script>
@@ -25,5 +55,12 @@ export default {
 </script>
 
 <style scoped>
-
+.cards__container{
+  display: flex;
+  flex-flow: row;
+  overflow-x: scroll;
+}
+.cards__container::-webkit-scrollbar {
+  display: none;
+}
 </style>
