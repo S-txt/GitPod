@@ -38,6 +38,55 @@
     <img src="./assets/lb_4geeks.svg">
   </div>
   <start-component/>
+  <footer>
+    <div class="footer_menu regular">
+      <ul>
+        <li class="bold"><a href="#">GitPod</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Changelog</a></li>
+        <li><a href="#">Self-Hosted</a></li>
+        <li><a href="#">Gitpod vs GitHub<br>
+          Codespaces</a></li>
+        <li><a href="#">Status</a></li>
+      </ul>
+      <ul>
+        <li class="bold"><a href="#">Developer</a></li>
+        <li><a href="#">Getting started</a></li>
+        <li><a href="#">Screencast</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Report a bug</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+      <ul>
+        <li class="bold"><a href="#">Company</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Media Kit</a></li>
+      </ul>
+      <ul>
+        <li class="bold"><a href="#">Legal</a></li>
+        <li><a href="#">Imprint</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer_copyright">
+      <div class="copyright">
+        <img src="../src/assets/logo_2.svg">
+        Copyright © 2021 Gitpod
+      </div>
+      <div class="media">
+        <img src="../src/assets/ic_twitter_orange.svg">
+        <img src="../src/assets/ic_github_orange.svg">
+        <img src="../src/assets/ic_chat_orange.svg">
+      </div>
+    </div>
+
+  </footer>
 </template>
 
 <script>
@@ -76,6 +125,8 @@ export default {
   --grey: #6A6766;
   --ligh-grey: #999795;
   --yellow: #FFAE33;
+  --orange: #FC6D26;
+  --peach: #FFE4BC;
   --pink: #FFB0AE;
   --blue: #2684FF;
 }
@@ -94,7 +145,8 @@ export default {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: var(--black)
+  color: var(--black);
+  list-style-type: none;
 }
 body{
   background: var(--white);
@@ -143,5 +195,44 @@ header{
 }
 .companies__list{
   flex-basis: calc(100% / 7);
+}
+footer{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap:47px;
+  width: 100%;
+  padding: 0 230px;
+  align-self: center;
+}
+.footer_menu{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer_menu ul{
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+.footer_copyright{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #ECE7E5;
+  padding: 33px 0;
+
+}
+.footer_copyright .copyright{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer_copyright .media{
+  display: flex;
+  gap: 16px
 }
 </style>
